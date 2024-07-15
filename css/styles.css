@@ -38,6 +38,7 @@ p {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 h1 {
@@ -55,10 +56,6 @@ h2 {
   text-align: center;
   text-transform: capitalize;
   color: #2E2F42;
-}
-
-button {
-  border: none;
 }
 
 .visually-hidden {
@@ -201,10 +198,6 @@ button {
     background-size: cover;
 }
 
-.section-one .container {
-
-}
-
 .title-one {
   max-width: 496px;
   margin: 0 auto;
@@ -230,12 +223,39 @@ button {
 
 /*-------Form---------*/
 
+.modal-overlay {
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  max-width: 408px;
+  max-height: 584px;
+  overflow-y: auto;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   max-width: 408px;
   border-radius: 4px;
   padding: 24px;
+  background-color: #FFFFFF;
 }
 
 .close-form {
@@ -259,9 +279,9 @@ button {
   fill: #2e2f42;
 }
 
-.form-button-close:hover .form-icon,
-.form-button-close:focus .form-icon, 
-.form-button-close:active .form-icon {
+.form-button-close:hover .form-icon-close,
+.form-button-close:focus .form-icon-close, 
+.form-button-close:active .form-icon-close {
   fill: #FFFFFF;
 }
 
@@ -300,20 +320,28 @@ button {
 }
 
 .form-icon {
-position:absolute;
+  position:absolute;
+  top: 11px;
+  left: 16px;
+}
+
+.phone,
+.email {
+  top: 8px;
 }
 
 .form-input {
   margin-bottom: 8px;
   width: 360px;
   height: 40px;
+  padding-left: 38px;
 
 }
 
 .form-textarea {
   margin-bottom: 16px;
   padding-top: 8px;
-
+  padding-left: 16px;
 }
 
 .form-input,
@@ -321,12 +349,11 @@ position:absolute;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: none;
-  padding-left: 16px;
 }
 
-.form-label:hover .form-icon,
-.form-label:focus-within .form-icon,
-.form-label:active .form-icon {
+.form-icon-inptut:hover .form-icon,
+.form-icon-inptut:focus-within .form-icon,
+.form-icon-inptut:active .form-icon {
   fill: #4d5ae5;
 }
 
@@ -348,12 +375,20 @@ position:absolute;
   border-radius: 4px;
 }
 
-.form-icon.person {
-  
+.checkbox-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 24px;
 }
 
 .fotm-checkbox {
-  margin-bottom: 24px;
+  
+}
+
+.form-span {
+
 }
 
 .form-link {
