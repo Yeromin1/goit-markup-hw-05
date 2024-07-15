@@ -301,18 +301,26 @@ h2 {
   margin-bottom: 16px;
 }
 
+.form-field {
+
+}
+
 .form-label {
   display: flex;
   flex-direction: column;
-  gap: 4px;
   }
 
-.form-span {
+.form-span,
+.form-span-checkbox {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+
+.form-span {
+  margin-bottom: 4px;
 }
 
 .form-icon-inptut {
@@ -715,12 +723,9 @@ h2 {
 
 .footer-label-button {
   display: flex;
-  gap: 24px
 }
 
 .footer-form-label {
-
-
 
 }
 
@@ -739,6 +744,7 @@ h2 {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding-left: 16px;
+  margin-right: 24px;
 }
 
 .footer-form-button {
