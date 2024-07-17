@@ -456,13 +456,13 @@
                 <p class="footer-form-title">Subscribe</p>
 
                 <form class="footer-form" name="issue_report_form" autocomplete="off">
-                    <label class="footer-form-label"  for="user_email">
+                    <label class="footer-form-label">
+                        <input 
+                        class="footer-form-input"
+                        type="email" 
+                        name="user_email"
+                        placeholder="E-mail"/>
                     </label>
-
-                    <input class="footer-form-input"
-                    type="email" name="user_email"
-                    placeholder="E-mail" id="user_email"
-                    />
                 
                     <button class="footer-form-button" type="submit">Subscribe
                         <svg 
@@ -561,8 +561,12 @@
                             id="user-privacy"
                             />
                             <label class="checkbox-label" for="user-privacy">
-                                <span class="checkbox-span">I accept the terms and conditions of the <a href="#" class="checkbox-link">Privacy Policy</a>
-                                </span>
+                                <span class="checkbox-span"><svg 
+                                    Class="checkbox-icon" 
+                                    width="8" 
+                                    height="10">
+                                    <use href="./images/checkbox.svg#icon-Checkbox"></use></svg></span>I accept the terms and conditions of the <a href="#" class="checkbox-link">Privacy Policy</a>
+                                
                             </label>
                         </div>
             
