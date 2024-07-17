@@ -753,21 +753,10 @@ h2 {
   margin-right: 8px;
 }
 
-.visually-hidden:checked .checkbox-span {
+.visually-hidden:checked + .checkbox-label > .checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
-}
-
-.checkbox-span:focus .checkbox-icon,
-.checkbox-span:active .checkbox-icon {
-  border: none;
-  fill: #F4F4FD;
-}
-
-.checkbox-span:focus,
-.checkbox-span:active {
-  background-color: #404bbf;
 }
 
 .checkbox-icon {
